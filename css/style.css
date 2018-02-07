@@ -1,6 +1,15 @@
+body{
+    font-size: 16px;
+    color: rgba(1,1,1,0.36);
+}
+
 h1 {
     text-align: center;
     background-color: gray;
     color: white;
     padding: 10px 10px 10px 10px;
+}
+
+.textBox{
+    /*TODO*/
 }
