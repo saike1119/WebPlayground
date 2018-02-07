@@ -7,6 +7,7 @@
 </head>
 <body>
 <h1>ようこそ！WebPlaygroundへ！</h1>
+<div class="textBox"></div>
 <p>ここでは様々なWebに関する技術を楽しめます</p>
 </body>
 </html>
