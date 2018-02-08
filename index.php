@@ -11,7 +11,7 @@
 <p>ここでは様々なWebに関する技術を楽しめます</p>
 <h3>PlayGround</h3>
 <ul type="disc">
-    <li><a href="#">距離計算</a><br></li>
+    <li><a href="walkform.php">距離計算</a><br></li>
     <li><a href="#">メンバーシャッフル</a></li>
 </ul>
 </body>
