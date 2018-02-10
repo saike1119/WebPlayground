@@ -42,5 +42,4 @@ class walk_calc
 $const = new walk_calc();
 $name = $const->setName(($_POST['name']));
 $ww = $const->walk(($_POST['start']), ($_POST['goal']), ($_POST['move']), $const->count);
-var_dump($name);
 echo $name . 'はスタートが' . $ww['start'] . '。ゴールは' . $ww['goal'] . 'だった。それで歩ける幅は' . $ww['move'] . 'だったが頑張って' . $ww['count'] . '歩いてゴールについた！';
