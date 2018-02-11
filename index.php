@@ -11,9 +11,9 @@
 <p>ここでは様々なWebに関する技術を楽しめます</p>
 <h3>PlayGround</h3>
 <ul type="disc">
-    <li><a href="walkform.php">歩数計算</a><br></li>
-    <li><a href="oyasaiform.php">お野菜管理</a></li>
-    <li><a href="#">メンバーシャッフル</a></li>
+    <li><a href="walk_form.php">歩数計算</a><br></li>
+    <li><a href="vegetable_form.php">お野菜管理</a></li>
+    <li><a href="#">メンバーçシャッフル</a></li>
 </ul>
 </body>
 </html>
