@@ -12,6 +12,7 @@
 <h3>PlayGround</h3>
 <ul type="disc">
     <li><a href="walkform.php">歩数計算</a><br></li>
+    <li><a href="#">データベース入出力</a></li>
     <li><a href="#">メンバーシャッフル</a></li>
 </ul>
 </body>
