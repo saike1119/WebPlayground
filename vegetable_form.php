@@ -9,7 +9,7 @@
 <body>
 <h1>お野菜管理</h1>
 <form action="insert_vegetable.php" method="post">
-    野菜名: <input title="名前を入力" type="text" name="name"/><br>
+    野菜名: <input title="名前を入力" type="text" name="vegetable"/><br>
     <input type="submit"/>
 </form>
 </body>
