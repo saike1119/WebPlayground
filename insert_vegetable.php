@@ -17,6 +17,6 @@ if(!empty($_POST['vegetable'])) {
 
 ?>
 <br>
-<div class="btn">戻る</div>
+<input type="button" value="前のページへ戻る" onclick="history.back()">
 </body>
 </html>
