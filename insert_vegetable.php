@@ -9,11 +9,21 @@
 <body>
 <?php
 
-if(!empty($_POST['vegetable'])) {
-    $vegetable = $_POST['vegetable'];
-}else{
-    echo '値を入力してください！';
+include_once('db_def.php');
+
+$mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
+
+if ($mysqli->connect_error) {
+    echo $mysqli->connect_error;
+    exit();
 }
+
+if (isset($_POST['fruitsName'])) {
+    $vegetable = $_POST['vegetable'];
+    $fruitsName = mysqli_escape_string($mysqli, $fruitsName);
+}
+
+$mysqli->close();
 
 ?>
 <br>
