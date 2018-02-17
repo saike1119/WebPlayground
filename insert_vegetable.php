@@ -18,9 +18,9 @@ if ($mysqli->connect_error) {
     exit();
 }
 
-if (isset($_POST['fruitsName'])) {
-    $vegetable = $_POST['vegetable'];
-    $fruitsName = mysqli_escape_string($mysqli, $fruitsName);
+if (!empty($_POST['vegetable'])) {
+    $vegetable_value = $_POST['vegetable'];
+    $vegetable = mysqli_escape_string($mysqli, $vegetable_value);
 }
 
 $mysqli->close();
