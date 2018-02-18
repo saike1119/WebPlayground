@@ -18,9 +18,14 @@ if ($mysqli->connect_error) {
     exit();
 }
 
+$mysqli->set_charset('utf8');
+
 if (!empty($_POST['vegetable'])) {
     $vegetable_value = $_POST['vegetable'];
     $vegetable = mysqli_escape_string($mysqli, $vegetable_value);
+    echo $vegetable;
+} else {
+    echo '値を入力してください';
 }
 
 $mysqli->close();
