@@ -28,6 +28,9 @@ if (!empty($_POST['vegetable'])) {
     echo '値を入力してください';
 }
 
+$sql = "";
+$res = $mysqli->query($sql);
+
 $mysqli->close();
 
 ?>
