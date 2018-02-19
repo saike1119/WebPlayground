@@ -20,10 +20,15 @@ if ($mysqli->connect_error) {
 
 $mysqli->set_charset('utf8');
 
+$flg_p = 0;
+$flg_d = 0;
+$flg_n = 0;
+
 if (!empty($_POST['name'])) {
     $input_name = $_POST['name'];
     $name = mysqli_escape_string($mysqli, $input_name);
     echo $name;
+    $flg_n = 1;
 } else {
     echo '名前を入力してください' . "</br>";
 }
@@ -33,6 +38,7 @@ if (!empty($_POST['price'])) {
     $price = intval(mysqli_escape_string($mysqli, $input_price));
     if (is_int($price) && $price !== 0) {
         echo $price . '円' . "</br>";
+        $flg_p = 1;
     } else {
         echo '数字を入力してください' . "</br>";
     }
@@ -44,12 +50,16 @@ if (!empty($_POST['description'])) {
     $input_description = $_POST['description'];
     $description = mysqli_escape_string($mysqli, $input_description);
     echo $description;
+    $flg_d = 1;
 } else {
     echo '概要を入力してください' . "</br>";
 }
 
-$sql = "";
-$res = $mysqli->query($sql);
+if ($flg_n === 1 && $flg_d === 1 && $flg_p === 1) {
+    $sql = "INSERT INTO vegetable(name, price, description)VALUES($name,$price,$description);";
+}
+var_dump($sql);
+//$res = $mysqli->query($sql);
 
 $mysqli->close();
 
