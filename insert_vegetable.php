@@ -25,7 +25,23 @@ if (!empty($_POST['name'])) {
     $name = mysqli_escape_string($mysqli, $input_name);
     echo $name;
 } else {
-    echo '値を入力してください';
+    echo '名前を入力してください';
+}
+
+if (!empty($_POST['price'])) {
+    $input_price = $_POST['price'];
+    $price = mysqli_escape_string($mysqli, $input_price);
+    echo $price;
+} else {
+    echo '名前を入力してください';
+}
+
+if (!empty($_POST['description'])) {
+    $input_description = $_POST['description'];
+    $description = mysqli_escape_string($mysqli, $input_description);
+    echo $description;
+} else {
+    echo '名前を入力してください';
 }
 
 $sql = "";
