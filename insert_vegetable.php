@@ -14,7 +14,7 @@ include_once('db_def.php');
 $mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
 
 if ($mysqli->connect_error) {
-    echo $mysqli->connect_error;
+    echo $mysqli->connect_errno . ' : ' . $mysqli->connect_error;
     exit();
 }
 
