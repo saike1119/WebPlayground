@@ -20,10 +20,10 @@ if ($mysqli->connect_error) {
 
 $mysqli->set_charset('utf8');
 
-if (!empty($_POST['vegetable'])) {
-    $vegetable_value = $_POST['vegetable'];
-    $vegetable = mysqli_escape_string($mysqli, $vegetable_value);
-    echo $vegetable;
+if (!empty($_POST['name'])) {
+    $input_name = $_POST['name'];
+    $name = mysqli_escape_string($mysqli, $input_name);
+    echo $name;
 } else {
     echo '値を入力してください';
 }
