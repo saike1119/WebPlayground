@@ -27,7 +27,7 @@ $flg_n = 0;
 if (!empty($_POST['name'])) {
     $input_name = $_POST['name'];
     $name = mysqli_escape_string($mysqli, $input_name);
-    echo $name;
+    echo $name . "</br>";
     $flg_n = 1;
 } else {
     echo '名前を入力してください' . "</br>";
