@@ -31,7 +31,6 @@ if (!empty($_POST['name'])) {
 if (!empty($_POST['price'])) {
     $input_price = $_POST['price'];
     $price = intval(mysqli_escape_string($mysqli, $input_price));
-    var_dump($price);
     if (is_int($price) && $price !== 0) {
         echo $price . '円' . "</br>";
     } else {
