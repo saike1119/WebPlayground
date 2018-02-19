@@ -30,8 +30,13 @@ if (!empty($_POST['name'])) {
 
 if (!empty($_POST['price'])) {
     $input_price = $_POST['price'];
-    $price = mysqli_escape_string($mysqli, $input_price);
-    echo $price;
+    $price = intval(mysqli_escape_string($mysqli, $input_price));
+    var_dump($price);
+    if(is_int($price) && $price !== 0){
+        echo $price . '円';
+    }else{
+        echo '数字を入力してください';
+    }
 } else {
     echo '価格を入力してください';
 }
