@@ -25,20 +25,20 @@ if (!empty($_POST['name'])) {
     $name = mysqli_escape_string($mysqli, $input_name);
     echo $name;
 } else {
-    echo '名前を入力してください';
+    echo '名前を入力してください' . "</br>";
 }
 
 if (!empty($_POST['price'])) {
     $input_price = $_POST['price'];
     $price = intval(mysqli_escape_string($mysqli, $input_price));
     var_dump($price);
-    if(is_int($price) && $price !== 0){
-        echo $price . '円';
-    }else{
-        echo '数字を入力してください';
+    if (is_int($price) && $price !== 0) {
+        echo $price . '円' . "</br>";
+    } else {
+        echo '数字を入力してください' . "</br>";
     }
 } else {
-    echo '価格を入力してください';
+    echo '価格を入力してください' . "</br>";
 }
 
 if (!empty($_POST['description'])) {
@@ -46,7 +46,7 @@ if (!empty($_POST['description'])) {
     $description = mysqli_escape_string($mysqli, $input_description);
     echo $description;
 } else {
-    echo '概要を入力してください';
+    echo '概要を入力してください' . "</br>";
 }
 
 $sql = "";
