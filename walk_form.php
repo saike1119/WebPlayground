@@ -9,7 +9,7 @@
 <body>
 <h1>歩数計算アプリ</h1>
 <form action="walk_calc.php" method="post">
-    名前（未入力もok）: <input title="名前を入力" type="text" name="name"/><br>
+    名前: <input title="名前を入力" type="text" name="name"/><br>
     スタート地点: <input title="スタート地点を入力" type="text" name="start"/><br>
     ゴール地点: <input title="ゴール地点を入力" type="text" name="goal"/><br>
     移動幅: <input title="移動幅を入力" type="text" name="move"/><br>
