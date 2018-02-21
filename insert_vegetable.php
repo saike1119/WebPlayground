@@ -57,7 +57,8 @@ if (!empty($_POST['description'])) {
 
 if ($flg_n === 1 && $flg_d === 1 && $flg_p === 1) {
     //TODO sql文修正する
-    $sql = "INSERT INTO vegetable(id, name, price, description) VALUES (NULL, $name, $price, $description)";
+//    $sql = "INSERT INTO vegetable(id, name, price, description) VALUES (NULL, $name, $price, $description)";
+    $sql = "INSERT INTO `vegetable` (`id`, `name`, `price`, `description`) VALUES (NULL, '$name', '$price', '$description')";
     var_dump($sql);
     $res = $mysqli->query($sql);
 }
