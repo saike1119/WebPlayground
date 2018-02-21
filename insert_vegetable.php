@@ -55,11 +55,13 @@ if (!empty($_POST['description'])) {
     echo '概要を入力してください' . "</br>";
 }
 
+//sql insert処理
 if ($flg_n === 1 && $flg_d === 1 && $flg_p === 1) {
-    //TODO sql文修正する
     $sql = "INSERT INTO `vegetable` (`id`, `name`, `price`, `description`) VALUES (NULL, '$name', '$price', '$description')";
     $res = $mysqli->query($sql);
 }
+
+
 $mysqli->close();
 
 ?>
