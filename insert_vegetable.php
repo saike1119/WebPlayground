@@ -61,7 +61,13 @@ if ($flg_n === 1 && $flg_d === 1 && $flg_p === 1) {
     $res = $mysqli->query($sql);
 }
 
+//sql select処理
+$sql = "SELECT * FROM vegetable";
+$res = $mysqli->query($sql);
 
+if($res) {
+    var_dump($res->fetch_all());
+}
 $mysqli->close();
 
 ?>
