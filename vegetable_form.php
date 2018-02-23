@@ -17,6 +17,29 @@
 <?php
 include_once('db_def.php');
 
+$mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
+
+if ($mysqli->connect_error) {
+    echo $mysqli->connect_errno . ' : ' . $mysqli->connect_error;
+    exit();
+}
+
+$mysqli->set_charset('utf8');
+
+//sql select処理
+$sql = "SELECT * FROM vegetable";
+$res = $mysqli->query($sql);
+
+if ($res) {
+    var_dump($res->fetch_all());
+    foreach ($res as $value) {
+        echo $value['name'] . "</br>";
+        echo $value['price'] . "</br>";
+        echo $value['description'] . "</br>";
+    }
+}
+$mysqli->close();
+
 ?>
 </body>
 </html>
