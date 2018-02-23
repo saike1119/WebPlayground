@@ -14,5 +14,9 @@
     概要: <input title="概要を入力" type="text" name="description"/><br>
     <input type="submit"/>
 </form>
+<?php
+include_once('db_def.php');
+
+?>
 </body>
 </html>
