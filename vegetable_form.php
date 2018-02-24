@@ -30,15 +30,14 @@ $mysqli->set_charset('utf8');
 $sql = "SELECT * FROM vegetable";
 $res = $mysqli->query($sql);
 
-if ($res) {
-    foreach ($res as $value) {
-        echo $value['name'] . "</br>";
-        echo $value['price'] . "</br>";
-        echo $value['description'] . "</br>";
-    }
-}
-$mysqli->close();
-
 ?>
+
+<?php foreach ($res as $value): ?>
+    <div class="Box">
+        <p><span><?php echo $value['name']; ?></span></p>
+        <p><span><?php echo $value['price']; ?></span></p>
+        <p><span><?php echo $value['description']; ?></span></p>
+    </div>
+<?php endforeach; ?>
 </body>
 </html>
