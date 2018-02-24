@@ -8,3 +8,10 @@ h1 {
 .textBox{
     /*TODO*/
 }
+
+.ContentBox{
+    border: solid 1px;
+    color: #000000;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
