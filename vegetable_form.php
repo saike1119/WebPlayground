@@ -37,9 +37,9 @@ $mysqli->close();
 </form>
 <?php foreach ($res as $value): ?>
     <div class="ContentBox">
-        <p><span><?php echo $value['name']; ?></span></p>
-        <p><span><?php echo $value['price']; ?></span></p>
-        <p><span><?php echo $value['description']; ?></span></p>
+        <p><span><?php echo '野菜名: ' . $value['name']; ?></span></p>
+        <p><span><?php echo '値段: ' . $value['price']; ?></span></p>
+        <p><span><?php echo '概要: ' . $value['description']; ?></span></p>
     </div>
 <?php endforeach; ?>
 </body>
