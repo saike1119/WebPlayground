@@ -31,7 +31,6 @@ $sql = "SELECT * FROM vegetable";
 $res = $mysqli->query($sql);
 
 if ($res) {
-    var_dump($res->fetch_all());
     foreach ($res as $value) {
         echo $value['name'] . "</br>";
         echo $value['price'] . "</br>";
