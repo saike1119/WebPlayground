@@ -59,12 +59,13 @@ if (!empty($_POST['description'])) {
 if ($flg_n === 1 && $flg_d === 1 && $flg_p === 1) {
     $sql = "INSERT INTO `vegetable` (`id`, `name`, `price`, `description`) VALUES (NULL, '$name', '$price', '$description')";
     $res = $mysqli->query($sql);
+    echo '上記を追加しました！！';
 }
 
 $mysqli->close();
 
 ?>
 <br>
-<input type="button" value="前のページへ戻る" onClick="location.href='http://192.168.33.10/vegetable_form.php'">
+<input type="button" value="前のページへ戻る" onClick="location.href=''">
 </body>
 </html>
