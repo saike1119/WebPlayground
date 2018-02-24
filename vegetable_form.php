@@ -36,7 +36,7 @@ $mysqli->close();
     <input type="submit"/>
 </form>
 <?php foreach ($res as $value): ?>
-    <div class="Box">
+    <div class="ContentBox">
         <p><span><?php echo $value['name']; ?></span></p>
         <p><span><?php echo $value['price']; ?></span></p>
         <p><span><?php echo $value['description']; ?></span></p>
