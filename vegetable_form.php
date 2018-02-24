@@ -14,6 +14,9 @@ $mysqli->set_charset('utf8');
 $sql = "SELECT * FROM vegetable";
 $res = $mysqli->query($sql);
 
+$mysqli->close();
+
+
 ?>
 
 <!DOCTYPE html>
