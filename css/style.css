@@ -9,9 +9,11 @@
     /*TODO*/
 }
 
-.ContentBox{
+.globalNav {
+    list-style: none;
+}
+
+.contentBox{
     border: solid 1px;
-    border-color: gray;
     margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
 }
