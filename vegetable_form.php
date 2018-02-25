@@ -28,7 +28,7 @@ $mysqli->close();
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-<h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="5%" height="5%"></h1>
+<h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
 <ul class="globalNav">
     <li class="active">
         <a href="#">
@@ -56,7 +56,7 @@ $mysqli->close();
     <input type="submit" value="野菜を追加する"/>
 </form>
 <?php foreach ($res as $value): ?>
-    <div class="ContentBox">
+    <div class="contentBox">
         <p><span><?php echo '野菜名: ' . $value['name']; ?></span></p>
         <p><span><?php echo '値段: ' . $value['price']; ?></span></p>
         <p><span><?php echo '概要: ' . $value['description']; ?></span></p>
