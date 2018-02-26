@@ -66,6 +66,6 @@ $mysqli->close();
 
 ?>
 <br>
-<input type="button" value="前のページへ戻る" onClick="location.href='http://192.168.33.10/vegetable_form.php'">
+<input type="button" value="前のページへ戻る" onClick="location.href='vegetable_home.php'">
 </body>
 </html>
