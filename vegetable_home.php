@@ -49,12 +49,6 @@ $mysqli->close();
         </a>
     </li>
 </ul>
-<form action="insert_vegetable.php" method="post">
-    野菜名: <input title="名前を入力" type="text" name="name"/><br>
-    価格: <input title="価格を入力" type="text" name="price"/><br>
-    概要: <input title="概要を入力" type="text" name="description"/><br>
-    <input type="submit" value="野菜を追加する"/>
-</form>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
         <p><span><?php echo '野菜名: ' . $value['name']; ?></span></p>
