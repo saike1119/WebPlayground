@@ -1,47 +1,8 @@
-.h1 {
+.header {
     text-align: center;
     background-color: gray;
     color: white;
     padding: 10px 10px 10px 10px;
-}
-
-.textBox {
-}
-
-.globalNav {
-    list-style: none;
-    overflow: hidden;
-}
-
-.globalNav li {
-    float: left;
-    border-right: 1px solid #DDD;
-}
-
-.globalNav a {
-    display: block;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-}
-
-.globalNav li a span {
-    display: block;
-    margin: 3px 0 0 0;
-    color: #AAA;
-    text-transform: uppercase;
-    font-size: 80%;
-    letter-spacing: 1px;
-}
-
-.globalNav li a:hover {
-    background: #EEE;
-}
-
-.globalNav li.active a {
-    background: #333;
-    color: #EEE;
 }
 
 .contentBox {
