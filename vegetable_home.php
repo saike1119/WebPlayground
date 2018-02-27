@@ -16,7 +16,6 @@ $res = $mysqli->query($sql);
 
 $mysqli->close();
 
-
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ $mysqli->close();
 </head>
 <body>
 <div class="header">
-<h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
+    <h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
 </div>
 <ul class="globalNav">
     <li class="active">
