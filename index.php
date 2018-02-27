@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
-    <meta charset="utf-8">
     <title>WebPlayground</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
