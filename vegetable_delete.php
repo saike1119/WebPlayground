@@ -28,6 +28,7 @@
         </a>
     </li>
 </ul>
+<p>・削除する野菜の管理IDを入力してください</p>
 <form action="delete_vegetable.php" method="post">
     管理ID: <input title="管理IDを入力" type="text" name="name"/><br>
     <input type="submit" value="野菜を追加する"/>
