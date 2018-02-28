@@ -28,6 +28,7 @@
         </a>
     </li>
 </ul>
+<p>・追加する野菜の詳細を入力してください</p>
 <form action="insert_vegetable.php" method="post">
     野菜名: <input title="名前を入力" type="text" name="name"/><br>
     価格: <input title="価格を入力" type="text" name="price"/><br>
