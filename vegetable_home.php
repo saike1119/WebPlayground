@@ -30,28 +30,17 @@ $mysqli->close();
 <div class="header">
     <h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
 </div>
-<span>
-<ul class="globalNav">
+<ul id="nav">
     <li>
-        <a href="http://192.168.33.10/vegetable_home.php">
-            <strong>ホーム</strong>
-            <span>home</span>
-        </a>
+        <a href="http://192.168.33.10/vegetable_home.php">ホーム</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_add.php">
-            <strong>お野菜追加</strong>
-            <span>add</span>
-        </a>
+        <a href="http://192.168.33.10/vegetable_add.php">お野菜追加</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_delete.php">
-            <strong>お野菜削除</strong>
-            <span>delete</span>
-        </a>
+        <a href="http://192.168.33.10/vegetable_delete.php">お野菜削除</a>
     </li>
 </ul>
-</span>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
         <p><span><?php echo '管理ID: ' . $value['id']; ?></span></p>
