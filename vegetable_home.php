@@ -45,7 +45,7 @@ $mysqli->close();
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="http://192.168.33.10/vegetable_delete.php">
             <strong>お野菜削除</strong>
             <span>delete</span>
         </a>
