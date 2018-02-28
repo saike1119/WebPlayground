@@ -54,6 +54,7 @@ $mysqli->close();
 </span>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
+        <p><span><?php echo '管理ID: ' . $value['id']; ?></span></p>
         <p><span><?php echo '野菜名: ' . $value['name']; ?></span></p>
         <p><span><?php echo '値段: ' . $value['price']; ?></span></p>
         <p><span><?php echo '概要: ' . $value['description']; ?></span></p>
