@@ -28,5 +28,8 @@
         </a>
     </li>
 </ul>
+<form action="delete_vegetable.php" method="post">
+    管理ID: <input title="管理IDを入力" type="text" name="name"/><br>
+    <input type="submit" value="野菜を追加する"/>
 </body>
 </html>
