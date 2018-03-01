@@ -20,6 +20,14 @@ if ($mysqli->connect_error) {
 
 $mysqli->set_charset('utf8');
 
+if (!empty($_POST['id'])) {
+    $input_id = $_POST['id'];
+    $id = mysqli_escape_string($mysqli, $input_id);
+    echo $id . "</br>";
+} else {
+    echo 'idを入力してください' . "</br>";
+}
+
 $mysqli->close();
 
 ?>
