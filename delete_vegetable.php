@@ -20,12 +20,22 @@ if ($mysqli->connect_error) {
 
 $mysqli->set_charset('utf8');
 
+$flg_i = 0;
+
 if (!empty($_POST['id'])) {
     $input_id = $_POST['id'];
     $id = mysqli_escape_string($mysqli, $input_id);
-    echo $id . "</br>";
+    echo '管理ID:'.$id . "</br>";
+    $flg_i = 1;
 } else {
     echo 'idを入力してください' . "</br>";
+}
+
+//sql delete処理
+if ($flg_i === 1) {
+    $sql = "DELETE FROM `vegetable` WHERE `vegetable`.`id` = $id";
+    $res = $mysqli->query($sql);
+    echo '上記を削除しました！！';
 }
 
 $mysqli->close();
