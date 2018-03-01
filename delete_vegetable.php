@@ -22,13 +22,16 @@ $mysqli->set_charset('utf8');
 
 $flg_i = 0;
 
-if (!empty($_POST['id'])) {
-    $input_id = $_POST['id'];
-    $id = mysqli_escape_string($mysqli, $input_id);
-    echo '管理ID:'.$id . "</br>";
-    $flg_i = 1;
-} else {
+$id = $_POST['id'];
+
+if (empty($id)) {
     echo 'idを入力してください' . "</br>";
+} elseif (!is_numeric($id)) {
+    echo 'idを数字で入力してください' . "</br>";
+} else {
+    echo '管理ID:' . $id . "</br>";
+    var_dump($id);
+    $flg_i = 1;
 }
 
 //sql delete処理
