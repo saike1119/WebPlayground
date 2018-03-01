@@ -36,7 +36,6 @@ if (empty($id)) {
         echo "該当データはありません";
     } else {
         echo '管理ID:' . $id . "</br>";
-        var_dump($id);
         $flg_i = 1;
     }
 }
