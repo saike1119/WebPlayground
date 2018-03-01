@@ -29,9 +29,16 @@ if (empty($id)) {
 } elseif (!is_numeric($id)) {
     echo 'idを数字で入力してください' . "</br>";
 } else {
-    echo '管理ID:' . $id . "</br>";
-    var_dump($id);
-    $flg_i = 1;
+    $sql = "SELECT * FROM `vegetable` WHERE id = $id";
+    $res = $mysqli->query($sql);
+    $rows = mysqli_num_rows($res);
+    if ($rows == 0) {
+        echo "該当データはありません";
+    } else {
+        echo '管理ID:' . $id . "</br>";
+        var_dump($id);
+        $flg_i = 1;
+    }
 }
 
 //sql delete処理
