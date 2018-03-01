@@ -36,15 +36,10 @@ if (empty($id)) {
         echo "該当データはありません";
     } else {
         echo '管理ID:' . $id . "</br>";
-        $flg_i = 1;
+        $sql = "DELETE FROM `vegetable` WHERE `vegetable`.`id` = $id";
+        $res = $mysqli->query($sql);
+        echo '上記を削除しました！！';
     }
-}
-
-//sql delete処理
-if ($flg_i === 1) {
-    $sql = "DELETE FROM `vegetable` WHERE `vegetable`.`id` = $id";
-    $res = $mysqli->query($sql);
-    echo '上記を削除しました！！';
 }
 
 $mysqli->close();
