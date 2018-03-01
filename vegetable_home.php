@@ -40,6 +40,10 @@ $mysqli->close();
     <li>
         <a href="http://192.168.33.10/vegetable_delete.php">お野菜削除</a>
     </li>
+    <li>
+        <!--TODO-->
+        <a href="#">お野菜更新</a>
+    </li>
 </ul>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
