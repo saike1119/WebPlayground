@@ -20,6 +20,9 @@
     <li>
         <a href="http://192.168.33.10/vegetable_delete.php">お野菜削除</a>
     </li>
+    <li>
+        <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
+    </li>
 </ul>
 <p>・追加する野菜の詳細を入力してください</p>
 <form action="insert_vegetable.php" method="post">
