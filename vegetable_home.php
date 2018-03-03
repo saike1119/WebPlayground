@@ -44,6 +44,7 @@ $mysqli->close();
         <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
     </li>
 </ul>
+<p>野菜一覧</p>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
         <p><span><?php echo '管理ID: ' . $value['id']; ?></span></p>

@@ -1,5 +1,5 @@
 <?php
-$dbhost = '';
-$dbuser = '';
-$dbpasswd = '';
-$dbname = '';
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpasswd = 'root';
+$dbname = 'vegetable';
