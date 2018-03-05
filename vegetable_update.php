@@ -25,7 +25,7 @@
     </li>
 </ul>
 <p>・更新する野菜の管理IDを入力してください</p>
-<form action="update_vegetable.php" method="post">
+<form action="#" method="post">
     管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
     <input type="submit" value="野菜を更新する"/>
 </form>
@@ -41,6 +41,8 @@ if ($mysqli->connect_error) {
 }
 
 $mysqli->set_charset('utf8');
+
+
 ?>
 </body>
 </html>
