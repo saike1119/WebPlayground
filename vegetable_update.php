@@ -26,8 +26,8 @@
 </ul>
 <p>・更新する野菜の管理IDを入力してください</p>
 <form action="#" method="post">
-    管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
-    <input type="submit" value="野菜を更新する"/>
+    管理検索(ID): <input title="管理IDを入力" type="text" name="id"/><br>
+    <input type="submit" value="野菜を確認する"/>
 </form>
 <?php
 
@@ -42,6 +42,33 @@ if ($mysqli->connect_error) {
 
 $mysqli->set_charset('utf8');
 
+if (empty($_POST)) {
+    $id = null;
+} else {
+    $id = $_POST['id'];
+}
+
+if (empty($id)) {
+    echo 'idを入力してください' . "</br>";
+} elseif (!is_numeric($id)) {
+    echo 'idを数字で入力してください' . "</br>";
+} else {
+    $sql = "SELECT * FROM `vegetable` WHERE id = $id";
+    $res = $mysqli->query($sql);
+    $rows = mysqli_num_rows($res);
+    if ($rows == 0) {
+        echo "該当データはありません";
+    } else {
+        foreach ($res as $value) {
+            echo '管理ID:' . $value['id'] . "<br/>";
+            echo '野菜名:' . $value['name'] . "<br/>";
+            echo '値段:' . $value['price'] . "<br/>";
+            echo '概要:' . $value['description'] . "<br/>";
+        }
+    }
+}
+
+$mysqli->close();
 
 ?>
 </body>
