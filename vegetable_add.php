@@ -24,7 +24,7 @@
         <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
     </li>
 </ul>
-<p>・追加する野菜の詳細を入力してください</p>
+<h2>追加する野菜の詳細を入力してください</h2>
 <form action="insert_vegetable.php" method="post">
     野菜名: <input title="名前を入力" type="text" name="name"/><br>
     価格: <input title="価格を入力" type="text" name="price"/><br>

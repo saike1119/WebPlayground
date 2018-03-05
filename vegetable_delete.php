@@ -24,9 +24,10 @@
         <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
     </li>
 </ul>
-<p>・削除する野菜の管理IDを入力してください</p>
+<h2>削除する野菜の管理IDを入力してください</h2>
 <form action="delete_vegetable.php" method="post">
     管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
     <input type="submit" value="野菜を削除する"/>
+</form>
 </body>
 </html>

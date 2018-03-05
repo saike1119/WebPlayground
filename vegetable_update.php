@@ -75,10 +75,10 @@ $mysqli->close();
 
 <h2>料理の更新</h2>
 <form action="#" method="post">
-    管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
-    野菜名: <input title="名前を入力" type="text" name="name"/><br>
-    価格: <input title="価格を入力" type="text" name="price"/><br>
-    概要: <input title="概要を入力" type="text" name="description"/><br>
+    更新したい野菜のID: <input title="管理IDを入力" type="text" name="id"/><br>
+    更新する野菜名: <input title="名前を入力" type="text" name="name"/><br>
+    更新する価格: <input title="価格を入力" type="text" name="price"/><br>
+    更新する概要: <input title="概要を入力" type="text" name="description"/><br>
     <input type="submit" value="野菜を更新する"/>
 </form>
 <br>
