@@ -43,6 +43,12 @@ $mysqli->close();
     <li>
         <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
     </li>
+    <li>
+        <a href="#">利用者情報</a>
+    </li>
+    <li>
+        <a href="#">ログアウト</a>
+    </li>
 </ul>
 <h2>野菜一覧</h2>
 <?php foreach ($res as $value): ?>
