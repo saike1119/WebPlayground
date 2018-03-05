@@ -24,7 +24,6 @@
         <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
     </li>
 </ul>
-<p>・更新する野菜の管理IDを入力してください</p>
 <h2>料理の検索確認</h2>
 <form action="#" method="post">
     管理検索(ID): <input title="管理IDを入力" type="text" name="id"/><br>
@@ -49,10 +48,6 @@ if (empty($_POST)) {
 } else {
     $id = $_POST['id'];
 }
-
-?>
-
-<?php
 
 if (empty($id)) {
     echo 'idを入力してください' . "</br>";
@@ -79,6 +74,14 @@ $mysqli->close();
 ?>
 
 <h2>料理の更新</h2>
+<form action="#" method="post">
+    管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
+    野菜名: <input title="名前を入力" type="text" name="name"/><br>
+    価格: <input title="価格を入力" type="text" name="price"/><br>
+    概要: <input title="概要を入力" type="text" name="description"/><br>
+    <input type="submit" value="野菜を更新する"/>
+</form>
+<br>
 
 </body>
 </html>
