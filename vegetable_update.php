@@ -25,10 +25,12 @@
     </li>
 </ul>
 <p>・更新する野菜の管理IDを入力してください</p>
+<h2>料理の検索確認</h2>
 <form action="#" method="post">
     管理検索(ID): <input title="管理IDを入力" type="text" name="id"/><br>
     <input type="submit" value="野菜を確認する"/>
 </form>
+<br>
 <?php
 
 include_once('db_def.php');
@@ -48,6 +50,10 @@ if (empty($_POST)) {
     $id = $_POST['id'];
 }
 
+?>
+
+<?php
+
 if (empty($id)) {
     echo 'idを入力してください' . "</br>";
 } elseif (!is_numeric($id)) {
@@ -60,7 +66,7 @@ if (empty($id)) {
         echo "該当データはありません";
     } else {
         foreach ($res as $value) {
-            echo '管理ID:' . $value['id'] . "<br/>";
+            echo '管理ID[' . $value['id'] . ']の料理ステータス' . "<br/>";
             echo '野菜名:' . $value['name'] . "<br/>";
             echo '値段:' . $value['price'] . "<br/>";
             echo '概要:' . $value['description'] . "<br/>";
@@ -71,5 +77,8 @@ if (empty($id)) {
 $mysqli->close();
 
 ?>
+
+<h2>料理の更新</h2>
+
 </body>
 </html>
