@@ -28,5 +28,19 @@
 <form action="update_vegetable.php" method="post">
     管理ID: <input title="管理IDを入力" type="text" name="id"/><br>
     <input type="submit" value="野菜を更新する"/>
+</form>
+<?php
+
+include_once('db_def.php');
+
+$mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
+
+if ($mysqli->connect_error) {
+    echo $mysqli->connect_errno . ' : ' . $mysqli->connect_error;
+    exit();
+}
+
+$mysqli->set_charset('utf8');
+?>
 </body>
 </html>
