@@ -74,7 +74,7 @@ $mysqli->close();
 ?>
 
 <h2>料理の更新</h2>
-<form action="#" method="post">
+<form action="update_vegetable.php" method="post">
     更新したい野菜のID: <input title="管理IDを入力" type="text" name="id"/><br>
     更新する野菜名: <input title="名前を入力" type="text" name="name"/><br>
     更新する価格: <input title="価格を入力" type="text" name="price"/><br>
