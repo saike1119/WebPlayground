@@ -14,6 +14,7 @@
     <li><a href="walk_form.php">歩数計算</a><br></li>
     <li><a href="vegetable_home.php">お野菜管理</a></li>
     <li><a href="#">メンバーシャッフル</a></li>
+    <li><a href="#">GPA計算</a><br></li>
 </ul>
 </body>
 </html>
