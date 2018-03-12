@@ -10,7 +10,7 @@
 <h1>GPA計算アプリ(文教大学対応)</h1>
 <p>GPAを計算します。AA,A,B,C,D,F,単位数をそれぞれ入力してください。</p>
 <p>なお、入力は全て半角英数字で入力してください。</p>
-<form action="#" method="post">
+<form action="GPA_calc.php" method="post">
     AA: <input title="AAを入力" type="text" name="AA"/><br>
     A: <input title="Aを入力" type="text" name="A"/><br>
     B: <input title="Bを入力" type="text" name="B"/><br>
