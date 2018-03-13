@@ -8,6 +8,7 @@ $D = $_POST['D'];
 $F = $_POST['F'];
 $unit = $_POST['unit'];
 
+//TODO バリデートを追加する
 if ($D >= 0) {
     $D = 0;
 }
