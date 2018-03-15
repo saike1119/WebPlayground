@@ -19,8 +19,10 @@ if ($F >= 0) {
 $sumPoints = $AA + $A + $B + $C + $D + $F;
 $GPA = $sumPoints / $unit;
 
-if ($GPA >= 3.5) {
+if ($GPA >= 3.0) {
     echo 'あなたのGPAは' . $GPA . 'です。優秀です！';
-} else {
+} elseif ($GPA < 3.0 || $GPA >= 2.0) {
     echo 'あなたのGPAは' . $GPA . 'です。普通です。';
+}else{
+    echo 'あなたのGPAは' . $GPA . 'です。もう少し頑張りましょう';
 }
