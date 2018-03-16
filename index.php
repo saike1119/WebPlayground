@@ -15,6 +15,7 @@
     <li><a href="vegetable_home.php">お野菜管理</a></li>
     <li><a href="#">メンバーシャッフル</a></li>
     <li><a href="/GPAapp/GPA_app.php">GPA計算</a><br></li>
+    <li><a href="/TODO/TODO_app.php">TODO管理</a><br></li>
 </ul>
 </body>
 </html>
