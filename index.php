@@ -19,7 +19,7 @@
         <p>概要:お野菜の管理ができます。閲覧から登録、削除、更新までの機能があります。</p></li>
     <li><a href="#">メンバーシャッフル</a><br>
         <p>~絶賛開発中~</p></li>
-    <li><a href="/GPAapp/GPA_app.php">GPA計算</a><br>
+    <li><a href="/GPA/GPA_app.php">GPA計算</a><br>
         <p>概要:GPAの計算ができます。最高評価4のものに対応しています。</p></li>
     <li><a href="/TODO/TODO_app.php">TODO管理</a><br>
         <p>~絶賛開発中~</p></li>
