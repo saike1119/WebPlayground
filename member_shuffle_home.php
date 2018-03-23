@@ -32,16 +32,16 @@ $mysqli->close();
 </div>
 <ul id="nav">
     <li>
-        <a href="http://192.168.33.10/vegetable_home.php">ホーム</a>
+        <a href="#">ホーム</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_add.php">メンバー追加</a>
+        <a href="#">メンバー追加</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_delete.php">メンバー削除</a>
+        <a href="#">メンバー削除</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_update.php">メンバー更新</a>
+        <a href="#">メンバー更新</a>
     </li>
 </ul>
 <h2>メンバーリスト</h2>
