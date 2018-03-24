@@ -45,8 +45,7 @@ $mysqli->close();
     </li>
 </ul>
 <p>
-    <input type="submit" value="シャッフル">
-</p>
+    <input type='submit' name='action' value='シャッフル'></p>
 <h2>メンバーリスト</h2>
 </body>
 </html>
