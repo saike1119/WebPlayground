@@ -44,6 +44,9 @@ $mysqli->close();
         <a href="#">メンバー更新</a>
     </li>
 </ul>
+<p>
+    <input type="submit" value="シャッフル">
+</p>
 <h2>メンバーリスト</h2>
 </body>
 </html>
