@@ -28,7 +28,7 @@ $mysqli->close();
 </head>
 <body>
 <div class="header">
-    <h1>メンバーシャッフル</h1>
+    <h1>メンバーシャッフルアプリ</h1>
 </div>
 <ul id="nav">
     <li>
