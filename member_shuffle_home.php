@@ -44,7 +44,7 @@ $mysqli->close();
         <a href="#">メンバー更新</a>
     </li>
 </ul>
-<a href="#">シャッフルする</a>
 <h2>メンバーリスト</h2>
+<a href="#">シャッフルする</a>
 </body>
 </html>
