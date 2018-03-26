@@ -1,0 +1,1 @@
+INSERT INTO `profile` (`id`, `name`, `birthday`, `adress`, `email`, `pass`) VALUES (NULL, '山田太郎', '19931119', '東京都中野区', 'tarou@gmail.com', 'tarou1234')
