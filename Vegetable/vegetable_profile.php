@@ -1,3 +1,4 @@
+<!--TODOログインと連携させる-->
 <?php
 include_once('../db_key/db_def_vegetable.php');
 
