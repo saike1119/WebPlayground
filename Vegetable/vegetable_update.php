@@ -23,6 +23,12 @@
     <li>
         <a href="http://192.168.33.10/vegetable/vegetable_update.php">お野菜更新</a>
     </li>
+    <li>
+        <a href="http://192.168.33.10/vegetable/vegetable_profile.php">利用者情報</a>
+    </li>
+    <li>
+        <a href="#">ログアウト</a>
+    </li>
 </ul>
 <h2>料理の検索確認</h2>
 <form action="#" method="post">

@@ -23,6 +23,12 @@
     <li>
         <a href="http://192.168.33.10/vegetable/vegetable_update.php">お野菜更新</a>
     </li>
+    <li>
+        <a href="http://192.168.33.10/vegetable/vegetable_profile.php">利用者情報</a>
+    </li>
+    <li>
+        <a href="#">ログアウト</a>
+    </li>
 </ul>
 <h2>追加する野菜の詳細を入力してください</h2>
 <form action="insert_vegetable.php" method="post">

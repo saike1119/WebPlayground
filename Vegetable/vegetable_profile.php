@@ -45,7 +45,7 @@ $mysqli->close();
         <a href="http://192.168.33.10/vegetable/vegetable_update.php">お野菜更新</a>
     </li>
     <li>
-        <a href="#">利用者情報</a>
+        <a href="http://192.168.33.10/vegetable/vegetable_profile.php">利用者情報</a>
     </li>
     <li>
         <a href="#">ログアウト</a>
