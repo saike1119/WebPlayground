@@ -11,7 +11,7 @@ if ($mysqli->connect_error) {
 $mysqli->set_charset('utf8');
 
 //sql select処理
-//$sql = "SELECT * FROM ????";
+$sql = "SELECT * FROM member";
 $res = $mysqli->query($sql);
 
 $mysqli->close();
