@@ -32,7 +32,7 @@
 <br>
 <?php
 
-include_once('../db_key/db_def.php');
+include_once('../db_key/db_def_vegetable.php');
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
 
