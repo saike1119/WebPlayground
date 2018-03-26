@@ -4,11 +4,33 @@
 <head>
     <title>WebPlayground</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/pageTop.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var topBtn = $('#pageTop');
+            topBtn.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 80) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="header">
     <h1>ようこそ！WebPlaygroundへ！</h1>
 </div>
+<p id="pageTop"><a href="#">🔝</a></p>
 <div class="textBox"></div>
 <p>ここでは様々なWebに関する技術を楽しむことができます。絶賛暇な時弄り中。</p>
 <h3>PlayGround</h3>
