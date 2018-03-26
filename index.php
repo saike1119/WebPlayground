@@ -32,8 +32,8 @@
 </div>
 <p id="pageTop"><a href="#">🔝</a></p>
 <div class="textBox"></div>
-<p>ここでは様々なWebに関する技術を楽しむことができます。絶賛暇な時弄り中。</p>
-<h3>PlayGround</h3>
+<p>ここでは様々なWebに関する技術を楽しむことができます。絶賛暇な時いじり中。</p>
+<h3>🔥PlayGround🔥</h3>
 <ul type="disc">
     <li><a href="Walk/walk_form.php">歩数計算</a><br>
         <p>概要:簡単な歩数計算ができます。算数レベルです。</p></li>
