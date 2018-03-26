@@ -12,16 +12,16 @@
 </div>
 <ul id="nav">
     <li>
-        <a href="http://192.168.33.10/vegetable_home.php">ホーム</a>
+        <a href="http://192.168.33.10/vegetable/vegetable_home.php">ホーム</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_add.php">お野菜追加</a>
+        <a href="http://192.168.33.10/vegetable/vegetable_add.php">お野菜追加</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_delete.php">お野菜削除</a>
+        <a href="http://192.168.33.10/vegetable/vegetable_delete.php">お野菜削除</a>
     </li>
     <li>
-        <a href="http://192.168.33.10/vegetable_update.php">お野菜更新</a>
+        <a href="http://192.168.33.10/vegetable/vegetable_update.php">お野菜更新</a>
     </li>
 </ul>
 <h2>追加する野菜の詳細を入力してください</h2>
