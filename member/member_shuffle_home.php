@@ -1,5 +1,5 @@
 <?php
-include_once('../db_key/db_def_vegetable.php');
+include_once('../db_key/db_def_member.php');
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
 
@@ -32,7 +32,7 @@ $mysqli->close();
 </div>
 <ul id="nav">
     <li>
-        <a href="#">ホーム</a>
+        <a href="http://192.168.33.10/member/member_home.php">ホーム</a>
     </li>
     <li>
         <a href="#">メンバー追加</a>
@@ -45,6 +45,10 @@ $mysqli->close();
     </li>
 </ul>
 <h2>メンバーリスト</h2>
+<p>今日のプレゼン発表は下記の通りです。</p>
+<?php foreach ($res as $value): ?>
+    <p><span><?php echo $value['name']; ?></span></p>
+<?php endforeach; ?>
 <a href="#">シャッフルする</a>
 </body>
 </html>
