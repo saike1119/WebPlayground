@@ -1,5 +1,5 @@
 <?php
-include_once('db_def.php');
+include_once('../db_key/db_def.php');
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
 
@@ -24,11 +24,11 @@ $mysqli->close();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>form</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <div class="header">
-    <h1>お野菜管理<img src="./img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
+    <h1>お野菜管理<img src="../img/vegetable_main.png" alt="logo" width="50" height="50"></h1>
 </div>
 <ul id="nav">
     <li>
