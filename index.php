@@ -18,7 +18,7 @@
     <li><a href="Vegetable/vegetable_home.php">お野菜管理</a><br>
         <p>概要:お野菜の管理ができます。閲覧から登録、削除、更新までの機能があります。</p></li>
     <li><a href="member/member_shuffle_home.php">メンバーシャッフル</a><br>
-        <p>~絶賛開発中~</p></li>
+        <p>概要:プレゼン発表の順番をワンクリックで決めることができます。</p></li>
     <li><a href="/GPA/GPA_app.php">GPA計算</a><br>
         <p>概要:GPAの計算ができます。最高評価4のものに対応しています。</p></li>
     <li><a href="/TODO/TODO_app.php">TODO管理</a><br>
