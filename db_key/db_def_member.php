@@ -2,4 +2,4 @@
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpasswd = 'root';
-$dbname = 'vegetable';
+$dbname = 'member';
