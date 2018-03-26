@@ -26,7 +26,7 @@
         });
     </script>
 </head>
-<body>
+<body background="img/polygon_bule.jpg">
 <div class="header">
     <h1>ようこそ！WebPlaygroundへ！</h1>
 </div>
