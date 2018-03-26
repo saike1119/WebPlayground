@@ -1,5 +1,5 @@
 <?php
-include_once('../db_key/db_def_member.php');
+include_once('../db_key/db_def_vegetable.php');
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpasswd, $dbname);
 
@@ -11,7 +11,7 @@ if ($mysqli->connect_error) {
 $mysqli->set_charset('utf8');
 
 //sql select処理
-$sql = "SELECT * FROM member";
+$sql = "SELECT * FROM profile";
 $res = $mysqli->query($sql);
 
 $mysqli->close();
@@ -50,7 +50,7 @@ $mysqli->close();
         <a href="#">ログアウト</a>
     </li>
 </ul>
-<h2>野菜一覧</h2>
+<h2>利用者情報</h2>
 <?php foreach ($res as $value): ?>
     <div class="contentBox">
         <p><span><?php echo '利用者ID: ' . $value['id']; ?></span></p>
