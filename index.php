@@ -42,7 +42,7 @@
         <p>概要:プレゼン発表の順番をワンクリックで決めることができます。また、１日ごとにメンバーが強制シャッフルされます。</p></li>
     <li><a href="/GPA/GPA_app.php">GPA計算</a><br>
         <p>概要:GPAの計算ができます。最高評価4のものに対応しています。</p></li>
-    <li><a href="#">簡易ログイン</a><br>
+    <li><a href="/login/Main.php">簡易ログイン</a><br>
         <p>概要:簡易的なログイン実装です。</p></li>
     <li><a href="/TODO/TODO_app.php">TODO管理</a><br>
         <p>概要:簡単なタスク管理ができるTODOアプリです。</p></li>
