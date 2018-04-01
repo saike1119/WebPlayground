@@ -33,7 +33,7 @@ if (isset($_POST["login"])) {
         try {
             $pdo = new PDO($dsn, $db['user'], $db['pass'], array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-            $stmt = $pdo->prepare('SELECT * FROM userData WHERE id = ?');
+            $stmt = $pdo->prepare('SELECT * FROM userData WHERE name = ?');
             $stmt->execute(array($userid));
 
             $password = $_POST["password"];
