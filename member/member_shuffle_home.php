@@ -32,7 +32,7 @@ $mysqli->close();
 </div>
 <ul id="nav">
     <li>
-        <a href="http://192.168.33.10/member/member_home.php">ホーム</a>
+        <a href="#">ホーム</a>
     </li>
     <li>
         <a href="#">メンバー追加</a>
