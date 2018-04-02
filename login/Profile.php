@@ -47,10 +47,8 @@ $pdo = null;
 <!-- ユーザーIDにHTMLタグが含まれても良いようにエスケープする -->
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
 <ul>
-    <?php echo $row['id'] ?><br/>
-    <?php echo $row['name'] ?><br/>
-    <?php echo $row['password'] ?><br/>
-
+    <li>あなたのID: <?php echo $row['id'] ?></li>
+    <li>あたなのユーザー名: <?php echo $row['name'] ?></li>
 
     <li><a href="Main.php">メインページに戻る</a></li>
 </ul>
