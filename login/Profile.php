@@ -40,10 +40,10 @@ $pdo = null;
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>プロフィール情報変更</title>
+    <title>プロフィール</title>
 </head>
 <body>
-<h1>プロフィール情報変更画面</h1>
+<h1>プロフィール情報画面</h1>
 <!-- ユーザーIDにHTMLタグが含まれても良いようにエスケープする -->
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
 <ul>
