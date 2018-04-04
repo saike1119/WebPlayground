@@ -26,6 +26,10 @@ $pdo = null;
 <h1>プロフィール編集画面</h1>
 <!-- ユーザーIDにHTMLタグが含まれても良いようにエスケープする -->
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
+<form action="#" method="post">
+    名前: <input title="名前を入力" type="text" name="name"/><br>
+    <input type="submit" value="変更する"/>
+</form>
     <li><a href="Main.php">メインページに戻る</a></li>
 </ul>
 </body>
