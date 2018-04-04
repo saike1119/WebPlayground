@@ -19,8 +19,8 @@ if (!isset($_SESSION["NAME"])) {
 <!-- ユーザーIDにHTMLタグが含まれても良いようにエスケープする -->
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
 <ul>
-    <li><a href="Profile.php">プロフィール情報</a></li>
-    <li><a href="ProfileEdit.php">プロフィール情報</a></li>
+    <li><a href="Profile.php">プロフィール情報/a></li>
+    <li><a href="ProfileEdit.php">プロフィール情報編集</a></li>
     <li><a href="Logout.php">ログアウト</a></li>
 </ul>
 </body>
