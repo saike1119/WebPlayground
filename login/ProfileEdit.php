@@ -6,22 +6,27 @@ if (!isset($_SESSION["NAME"])) {
     header("Location: Logout.php");
     exit;
 }
+
+$db['host'] = "localhost";  // DBサーバのURL
+$db['user'] = "root";  // ユーザー名
+$db['pass'] = "root";  // ユーザー名のパスワード
+$db['dbname'] = "loginManagement";  // データベース名
+
+// 接続を閉じる
+$pdo = null;
 ?>
 
 <!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>メイン</title>
+    <title>プロフィール編集</title>
 </head>
 <body>
-<h1>メイン画面</h1>
+<h1>プロフィール編集画面</h1>
 <!-- ユーザーIDにHTMLタグが含まれても良いようにエスケープする -->
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
-<ul>
-    <li><a href="Profile.php">プロフィール情報</a></li>
-    <li><a href="ProfileEdit.php">プロフィール情報</a></li>
-    <li><a href="Logout.php">ログアウト</a></li>
+    <li><a href="Main.php">メインページに戻る</a></li>
 </ul>
 </body>
 </html>
