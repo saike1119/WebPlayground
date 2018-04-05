@@ -28,6 +28,10 @@ $pdo = null;
 <p>ようこそ<u><?php echo htmlspecialchars($_SESSION["NAME"], ENT_QUOTES); ?></u>さん</p>  <!-- ユーザー名をechoで表示 -->
 <form action="#" method="post">
     名前: <input title="名前を入力" type="text" name="name"/><br>
+    名前: <input title="を入力" type="text" name="password"/><br>
+    名前: <input title="名前を入力" type="text" name="birthday"/><br>
+    名前: <input title="名前を入力" type="text" name="address"/><br>
+    名前: <input title="名前を入力" type="text" name="email"/><br>
     <input type="submit" value="変更する"/>
 </form>
     <li><a href="Main.php">メインページに戻る</a></li>
