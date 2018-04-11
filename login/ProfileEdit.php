@@ -34,7 +34,7 @@ $pdo = null;
     名前: <input title="名前を入力" type="text" name="email"/><br>
     <input type="submit" value="変更する"/>
 </form>
-    <li><a href="Main.php">メインページに戻る</a></li>
+<li><a href="Main.php">メインページに戻る</a></li>
 </ul>
 </body>
 </html>
